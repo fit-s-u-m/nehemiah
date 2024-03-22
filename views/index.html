@@ -1,0 +1,21 @@
+{{ block "index" . }}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nehmiah</title>
+         <script src="/static/lib/htmx.min.js"></script>
+    </head>
+    <body>
+        {{template "count" .}}
+        <button hx-post="/count" hx-target="#count">Count</button>
+    </body>
+</html>
+{{ end }}
+
+{{ block "count" .}}
+    <div id="count">
+        count : {{ .Count}}
+    </div>
+{{ end }}

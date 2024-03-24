@@ -1,10 +1,11 @@
 package main
 
 import (
-	"github.com/labstack/echo/v4"
-	"github.com/labstack/echo/v4/middleware"
 	"html/template"
 	"io"
+
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 )
 
 type Templates struct {
@@ -23,6 +24,7 @@ func newTemplate() *Templates {
 
 func main() {
 	e := echo.New()
+	e.Renderer = newTemplate()
 	e.Use(middleware.Logger())
 	e.GET("/", func(c echo.Context) error {
 		return c.Render(200, "home.html", nil)

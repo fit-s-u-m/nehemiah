@@ -4,12 +4,13 @@ module.exports = {
     relative: true,
     files: [
       "./*.html",
+      "./blogs/*.html",
+      "/blogs/*/index.html",
     ],
   },
   theme: {
     extend: {},
   },
-  plugins: [
-  ],
+  plugins: [require("daisyui")],
 }
 

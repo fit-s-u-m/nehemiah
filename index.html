@@ -7,7 +7,6 @@
     <title> Home page </title>
     <link rel="stylesheet" href="./css/home.css">
     <link rel="icon" href="./images/logo.svg">
-    <script src="./lib/htmx.min.js"></script>
 </head>
 
 <body>
@@ -19,31 +18,33 @@
                     ነህምያ ፤ uገሬን ልስራ
                 </p>
                 <div id="logo">
-                    <img src="./images/logo.svg" width="100" height="100" class="invert" alt="logo"> </img>
+                    <img src="./images/logo.svg" width="100" height="100" class="invert not_select" alt="logo"> </img>
                 </div>
             </div>
 
-            <div class="flex">
-                <div class="left">
-                    <img class="scale-50" src="images/numbers/7.png" alt="img of number one">
-                </div>
-                <div class="middle">
-                    <div id="logo_middle">
-                        <img src="./images/logo.svg" width="400" height="100" class="invert" alt="logo"> </img>
-                    </div>
-                    <div class="m-0 p-0 ">
-                        <img src="./images/drawing.png" alt="farmer">
-                    </div>
-                </div>
-                <div class="right">
-                    <img class="rotate-45 scale-75" src="images/numbers/9.png" alt="img of number one">
-                    <img class="scale-50 -rotate-45" src="images/numbers/1.png" alt="img of number one">
-                </div>
+            <!-- <div class="flex"> -->
+            <!-- <div class="left"> -->
+            <!--     <img class="scale-50 not_select" src="images/numbers/7.png" alt="img of number one"> -->
+            <!-- </div> -->
+            <!-- <div class="middle"> -->
+            <div id="logo_middle">
+                <img src="./images/logo.svg" width="400" height="100" class="invert not_select" alt="logo">
+                </img>
             </div>
+            <div class="m-0 p-0 ">
+                <img src="./images/drawing.png"
+                    class="shadow-[#8b4513_0px_15px_10px_-7px] opacity-60 rounded-xl not_select " alt="farmer">
+            </div>
+            <!-- </div> -->
+            <!-- <div class="right"> -->
+            <!--     <img class="rotate-45 scale-75 not_select" src="images/numbers/9.png" alt="img of number one"> -->
+            <!--     <img class="scale-50 -rotate-45 not_select" src="images/numbers/1.png" alt="img of number one"> -->
+            <!-- </div> -->
+            <!-- </div> -->
 
             <div class="mb-32 grid text-center md:max-w-5xl md:w-full md:mb-0 md:grid-cols-4 md:text-left">
                 <a href="/blogs/">
-                    <div class="card ">
+                    <div class="card hover:shadow-[#8b4513_0px_15px_10px_-7px] ">
                         <h2 class="card_text">
                             Blogs
                         </h2>
@@ -53,7 +54,7 @@
                     </div>
                 </a>
 
-                <div class="card">
+                <div class="card hover:shadow-[#8b4513_0px_15px_10px_-7px] ">
                     <a href="https://github.com/fit-s-u-m/website" target="_blank" rel="noopener noreferrer">
                         <h2 class="card_text">
                             Github
@@ -64,8 +65,8 @@
                     </a>
                 </div>
 
-                <a href="/about">
-                    <div class="card">
+                <a href="/about/">
+                    <div class="card hover:shadow-[#8b4513_0px_15px_10px_-7px] ">
                         <h2 class="card_text">
                             About
                         </h2>
@@ -75,9 +76,9 @@
                     </div>
                 </a>
 
-                <a href="/contacts">
-                    <div class="card">
-                        <h2 class="card_text">
+                <a href="/contacts  ">
+                    <div class="card hover:shadow-[#8b4513_0px_15px_10px_-7px]">
+                        <h2 class="card_text ">
                             Contacts
                         </h2>
                         <p class="m-0 max-w-[30ch] text-sm opacity-50 text-white">

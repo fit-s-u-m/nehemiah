@@ -6,6 +6,7 @@ export default {
         blogs: './blogs/index.html',
         trig: './blogs/trig/index.html',
         complex: './blogs/complex/index.html',
+        about: './about/index.html',
       }
     }
   }

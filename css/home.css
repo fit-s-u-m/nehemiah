@@ -44,10 +44,18 @@
         px-1 py-2 
         m-5
         transition-colors 
-        hover:border-gray-300 
         hover:text-black
-        hover:dark:border-white
+        hover:dark:border-[#100505]
 }
+.not_select {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
 .card_text{
     @apply
         mb-3

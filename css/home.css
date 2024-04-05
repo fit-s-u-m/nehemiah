@@ -8,7 +8,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* background-color: #000; */
+  background-color: #100505;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -88,9 +89,8 @@
         relative 
         flex place-items-center 
         before:absolute 
-        before:h-[300px] 
-        before:w-[480px] 
-        before:-translate-x-1/2 
+        before:h-[200px] 
+        before:w-[400px] 
         before:rounded-full  
         before:from-white 
         before:to-transparent 
@@ -99,20 +99,7 @@
         before:md:h-[400px] z-[-1]
         before:dark:bg-gradient-to-br 
         before:dark:from-transparent 
-        before:dark:to-cyan-400 
-        before:dark:opacity-10 
+        before:dark:to-[#8b4513] 
+        before:dark:opacity-90
 
-        after:absolute 
-        after:-z-20 
-        after:h-[180px] 
-        after:w-[240px] 
-        after:translate-x-1/3 
-        after:bg-gradient-to-t
-        after:from-sky-200 
-        after:via-blue-300
-        after:blur-2xl 
-        after:content-[''] 
-        after:dark:from-cyan-400
-        after:dark:via-[#01ffff] 
-        after:dark:opacity-70
 }
